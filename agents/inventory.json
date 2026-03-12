@@ -1,0 +1,156 @@
+{
+  "last_updated": "2026-03-13T00:08:32.511109",
+  "items": {
+    "Rich Dad Poor Dad": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Atomic Habits": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Psychology of Money": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Ikigai": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Think and Grow Rich": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "The Alchemist": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "The Secret": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "48 Laws of Power": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "It Ends with Us": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "The Silent Patient": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "A Good Girl's Guide to Murder": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "The Kite Runner": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Haunting Adeline": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "1984": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "The Housemaid": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Before the Coffee Gets Cold": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Palace of Illusions": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Who Moved My Cheese": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Attitude Is Everything": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Crime and Punishment": {
+      "type": "book",
+      "stock": 25,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Self-Help Starter Pack (Rich Dad + Atomic Habits + Ikigai)": {
+      "type": "bundle",
+      "stock": 10,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Thriller Bundle (Silent Patient + Housemaid + Good Girl's Guide)": {
+      "type": "bundle",
+      "stock": 10,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Classic Literature Set (1984 + Alchemist + Kite Runner)": {
+      "type": "bundle",
+      "stock": 10,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Mindset Collection (Psychology of Money + Think & Grow Rich + Attitude)": {
+      "type": "bundle",
+      "stock": 10,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    },
+    "Bestseller Box (It Ends with Us + Haunting Adeline + Before Coffee)": {
+      "type": "bundle",
+      "stock": 10,
+      "total_sold": 0,
+      "low_stock_threshold": 5
+    }
+  },
+  "transactions": []
+}
