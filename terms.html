@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions - BookVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --gold: #C9A96E;
+  --gold-light: #D4AF37;
+  --gold-glow: #E8D5A3;
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --cream: #F5F0E8;
+  --text-light: #9A9A9A;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--black); color: var(--cream); line-height: 1.8; overflow-x: hidden; }
+a { text-decoration: none; color: var(--gold); transition: color 0.3s; }
+a:hover { color: var(--gold-glow); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  padding: 16px 0;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: var(--font-display); font-size: 24px; font-weight: 700;
+  color: var(--gold); letter-spacing: 1px;
+}
+.logo span { color: var(--cream); font-weight: 400; }
+.back-link {
+  font-size: 13px; color: var(--text-light); letter-spacing: 0.5px;
+  text-transform: uppercase; font-weight: 500;
+}
+.back-link:hover { color: var(--gold); }
+
+/* Main Content */
+.container { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+.page-badge {
+  display: inline-block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--gold); font-weight: 600;
+  border: 1px solid rgba(201,169,110,0.3); padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 20px;
+}
+.page-title {
+  font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700; color: var(--cream); margin-bottom: 12px;
+}
+.page-subtitle {
+  color: var(--text-light); font-size: 15px; margin-bottom: 8px;
+}
+.last-updated {
+  color: var(--text-light); font-size: 13px; margin-bottom: 48px;
+  padding-bottom: 32px; border-bottom: 1px solid rgba(201,169,110,0.1);
+}
+
+/* Sections */
+.section { margin-bottom: 40px; }
+.section-number {
+  font-family: var(--font-display); font-size: 13px; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  font-weight: 600;
+}
+.section h2 {
+  font-family: var(--font-display); font-size: 22px; font-weight: 600;
+  color: var(--cream); margin-bottom: 16px;
+}
+.section p, .section li {
+  color: #B8B8B8; font-size: 14.5px; line-height: 1.85; margin-bottom: 12px;
+}
+.section ul, .section ol {
+  padding-left: 24px; margin-bottom: 16px;
+}
+.section li { margin-bottom: 8px; }
+.highlight-box {
+  background: var(--black-soft); border-left: 3px solid var(--gold);
+  padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 20px 0;
+}
+.highlight-box p { margin-bottom: 0; }
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(201,169,110,0.12);
+  padding: 48px 24px;
+  text-align: center;
+}
+.footer-inner { max-width: 900px; margin: 0 auto; }
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  margin-bottom: 24px;
+}
+.footer-links a {
+  font-size: 13px; color: var(--text-light); text-transform: uppercase;
+  letter-spacing: 1px; font-weight: 500;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-brand {
+  font-family: var(--font-display); font-size: 18px; color: var(--gold);
+  margin-bottom: 8px;
+}
+.footer-copy { font-size: 12px; color: #555; }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .section h2 { font-size: 19px; }
+  .footer-links { gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Book<span>Verse</span></a>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-badge">Legal</div>
+  <h1 class="page-title">Terms &amp; Conditions</h1>
+  <p class="page-subtitle">Please read these terms carefully before using BookVerse.</p>
+  <p class="last-updated">Last Updated: March 2026</p>
+
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Introduction &amp; Acceptance of Terms</h2>
+    <p>Welcome to BookVerse ("we," "our," or "us"), accessible at <a href="https://bookverse-puce.vercel.app">bookverse-puce.vercel.app</a>. These Terms and Conditions govern your use of our website and the purchase of products from our online bookstore.</p>
+    <p>By accessing or using our website, placing an order, or creating an account, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our services.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>Eligibility</h2>
+    <p>To use BookVerse and make purchases, you must:</p>
+    <ul>
+      <li>Be at least 18 years of age, or</li>
+      <li>Have the consent and supervision of a parent or legal guardian if you are under 18 years of age</li>
+      <li>Have the legal capacity to enter into a binding agreement under applicable Indian law</li>
+    </ul>
+    <p>By placing an order, you represent and warrant that you meet the above eligibility requirements.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>Account &amp; Ordering</h2>
+    <p>When you place an order on BookVerse, you are responsible for providing accurate and complete information, including your name, delivery address, phone number, and email address. You agree to:</p>
+    <ul>
+      <li>Provide truthful and current information during the ordering process</li>
+      <li>Maintain the confidentiality of your account credentials, if applicable</li>
+      <li>Accept responsibility for all activities that occur under your account</li>
+      <li>Notify us immediately of any unauthorised use of your account</li>
+    </ul>
+    <p>We reserve the right to refuse or cancel orders at our discretion, including but not limited to cases of suspected fraud, pricing errors, or stock unavailability.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Product Descriptions &amp; Pricing</h2>
+    <p>We make every effort to display accurate product descriptions, images, and pricing on our website. However, we do not warrant that product descriptions, images, or other content on our site are error-free.</p>
+    <div class="highlight-box">
+      <p>All prices on BookVerse are listed in Indian Rupees (INR). Our books are priced between &#8377;89 and &#8377;229. Prices are subject to change without prior notice. The price applicable to your order will be the price displayed at the time of placing the order.</p>
+    </div>
+    <p>In the event of a pricing error, we reserve the right to cancel the order and issue a full refund. We will make reasonable efforts to notify you of such cancellations.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>Payment Terms</h2>
+    <p>BookVerse accepts the following payment methods:</p>
+    <ul>
+      <li><strong>Online Payments via Razorpay</strong> — UPI, credit cards, debit cards, and net banking. All online transactions are processed securely through Razorpay's payment gateway.</li>
+      <li><strong>Cash on Delivery (COD)</strong> — Available for an additional fee of &#8377;49. Payment must be made in full at the time of delivery.</li>
+    </ul>
+    <p>By making a payment, you confirm that the payment method used belongs to you or that you have been authorised to use it. All payment information is handled securely by Razorpay and is not stored on our servers.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Shipping &amp; Delivery</h2>
+    <p>We offer delivery across India (pan-India shipping). Key details:</p>
+    <ul>
+      <li>Estimated delivery time is <strong>4 to 7 business days</strong> from the date of order confirmation</li>
+      <li>Orders above <strong>&#8377;399</strong> qualify for <strong>free delivery</strong></li>
+      <li>Delivery timelines may vary based on your location and unforeseen circumstances such as weather, natural disasters, or courier delays</li>
+      <li>Once your order is shipped, you will receive a tracking link via email or SMS</li>
+    </ul>
+    <p>BookVerse shall not be held liable for delays caused by third-party logistics providers. However, we will make reasonable efforts to resolve any delivery issues promptly.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Intellectual Property</h2>
+    <p>All content on the BookVerse website, including but not limited to text, graphics, logos, images, product descriptions, and software, is the property of BookVerse or its content suppliers and is protected by Indian and international intellectual property laws.</p>
+    <p>You may not reproduce, distribute, modify, create derivative works from, publicly display, or exploit any content from our website without our prior written consent.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>User Conduct</h2>
+    <p>When using BookVerse, you agree not to:</p>
+    <ul>
+      <li>Use the website for any unlawful purpose or in violation of any applicable laws</li>
+      <li>Attempt to gain unauthorised access to our systems, servers, or databases</li>
+      <li>Transmit any viruses, malware, or harmful code through our platform</li>
+      <li>Engage in fraudulent activities, including placing orders with false information</li>
+      <li>Interfere with or disrupt the proper functioning of the website</li>
+      <li>Scrape, crawl, or use automated tools to collect data from our website without permission</li>
+    </ul>
+    <p>Violation of these rules may result in suspension or termination of your access to BookVerse.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 09</div>
+    <h2>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, BookVerse and its directors, employees, partners, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of our website or the purchase of products.</p>
+    <p>Our total liability for any claim arising out of or relating to these terms shall not exceed the amount paid by you for the specific order that is the subject of the claim.</p>
+    <p>BookVerse does not guarantee uninterrupted, error-free, or secure access to our website at all times.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 10</div>
+    <h2>Governing Law &amp; Jurisdiction</h2>
+    <div class="highlight-box">
+      <p>These Terms and Conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts in India.</p>
+    </div>
+    <p>If any provision of these Terms and Conditions is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 11</div>
+    <h2>Changes to Terms</h2>
+    <p>BookVerse reserves the right to update or modify these Terms and Conditions at any time without prior notice. Changes will be effective immediately upon posting on this page. The "Last Updated" date at the top of this page indicates when the most recent revisions were made.</p>
+    <p>Your continued use of BookVerse after any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 12</div>
+    <h2>Contact Information</h2>
+    <p>If you have any questions, concerns, or feedback regarding these Terms and Conditions, please contact us at:</p>
+    <div class="highlight-box">
+      <p><strong>BookVerse</strong><br>
+      Email: <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br>
+      Website: <a href="https://bookverse-puce.vercel.app">bookverse-puce.vercel.app</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p style="color: var(--text-light); font-size: 13px; text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(201,169,110,0.1);">
+      Effective Date: March 2026 &mdash; BookVerse. All rights reserved.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">BookVerse</div>
+    <div class="footer-links">
+      <a href="index.html">Store</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="cancellation.html">Cancellation Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 BookVerse. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

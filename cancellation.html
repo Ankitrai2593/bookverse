@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cancellation Policy - BookVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --gold: #C9A96E;
+  --gold-light: #D4AF37;
+  --gold-glow: #E8D5A3;
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --cream: #F5F0E8;
+  --text-light: #9A9A9A;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--black); color: var(--cream); line-height: 1.8; overflow-x: hidden; }
+a { text-decoration: none; color: var(--gold); transition: color 0.3s; }
+a:hover { color: var(--gold-glow); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  padding: 16px 0;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: var(--font-display); font-size: 24px; font-weight: 700;
+  color: var(--gold); letter-spacing: 1px;
+}
+.logo span { color: var(--cream); font-weight: 400; }
+.back-link {
+  font-size: 13px; color: var(--text-light); letter-spacing: 0.5px;
+  text-transform: uppercase; font-weight: 500;
+}
+.back-link:hover { color: var(--gold); }
+
+.container { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+.page-badge {
+  display: inline-block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--gold); font-weight: 600;
+  border: 1px solid rgba(201,169,110,0.3); padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 20px;
+}
+.page-title {
+  font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700; color: var(--cream); margin-bottom: 12px;
+}
+.page-subtitle {
+  color: var(--text-light); font-size: 15px; margin-bottom: 8px;
+}
+.last-updated {
+  color: var(--text-light); font-size: 13px; margin-bottom: 48px;
+  padding-bottom: 32px; border-bottom: 1px solid rgba(201,169,110,0.1);
+}
+
+.section { margin-bottom: 40px; }
+.section-number {
+  font-family: var(--font-display); font-size: 13px; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  font-weight: 600;
+}
+.section h2 {
+  font-family: var(--font-display); font-size: 22px; font-weight: 600;
+  color: var(--cream); margin-bottom: 16px;
+}
+.section p, .section li {
+  color: #B8B8B8; font-size: 14.5px; line-height: 1.85; margin-bottom: 12px;
+}
+.section ul, .section ol {
+  padding-left: 24px; margin-bottom: 16px;
+}
+.section li { margin-bottom: 8px; }
+.highlight-box {
+  background: var(--black-soft); border-left: 3px solid var(--gold);
+  padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 20px 0;
+}
+.highlight-box p { margin-bottom: 0; }
+
+/* Timeline */
+.timeline {
+  position: relative; margin: 28px 0; padding-left: 32px;
+}
+.timeline::before {
+  content: ''; position: absolute; left: 11px; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--gold), rgba(201,169,110,0.15));
+}
+.timeline-item {
+  position: relative; margin-bottom: 28px; padding-bottom: 4px;
+}
+.timeline-item::before {
+  content: ''; position: absolute; left: -27px; top: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--gold); border: 3px solid var(--black);
+}
+.timeline-item h3 {
+  font-family: var(--font-display); font-size: 16px; color: var(--cream);
+  margin-bottom: 6px;
+}
+.timeline-item p {
+  color: #999; font-size: 14px; margin-bottom: 0; line-height: 1.7;
+}
+.timeline-item .tag {
+  display: inline-block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 1px; padding: 3px 10px; border-radius: 4px;
+  margin-bottom: 8px; font-weight: 600;
+}
+.tag-green { background: rgba(74,222,128,0.12); color: #4ADE80; }
+.tag-red { background: rgba(239,68,68,0.12); color: #EF4444; }
+.tag-yellow { background: rgba(201,169,110,0.15); color: var(--gold); }
+
+/* Info Card */
+.info-card {
+  background: var(--black-soft); border: 1px solid rgba(201,169,110,0.1);
+  border-radius: 12px; padding: 24px; margin: 20px 0;
+}
+.info-card h3 {
+  font-family: var(--font-display); font-size: 17px; color: var(--cream);
+  margin-bottom: 12px;
+}
+.info-card p { color: #999; font-size: 14px; margin-bottom: 8px; }
+.info-card p:last-child { margin-bottom: 0; }
+
+footer {
+  border-top: 1px solid rgba(201,169,110,0.12);
+  padding: 48px 24px;
+  text-align: center;
+}
+.footer-inner { max-width: 900px; margin: 0 auto; }
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  margin-bottom: 24px;
+}
+.footer-links a {
+  font-size: 13px; color: var(--text-light); text-transform: uppercase;
+  letter-spacing: 1px; font-weight: 500;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-brand {
+  font-family: var(--font-display); font-size: 18px; color: var(--gold);
+  margin-bottom: 8px;
+}
+.footer-copy { font-size: 12px; color: #555; }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .section h2 { font-size: 19px; }
+  .footer-links { gap: 16px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Book<span>Verse</span></a>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-badge">Orders</div>
+  <h1 class="page-title">Cancellation Policy</h1>
+  <p class="page-subtitle">Need to cancel an order? Here is everything you need to know about our cancellation process.</p>
+  <p class="last-updated">Last Updated: March 2026</p>
+
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Before Shipment</h2>
+    <div class="highlight-box">
+      <p>You may cancel your order <strong>free of charge within 12 hours</strong> of placing it, provided the order has not yet been shipped. Cancellations within this window are processed immediately with no questions asked.</p>
+    </div>
+    <p>To check whether your order has been shipped, refer to the order confirmation email or contact us at <a href="mailto:hello@bookverse.in">hello@bookverse.in</a>. If the order status shows "Processing" or "Confirmed," it can still be cancelled. If it shows "Shipped" or "In Transit," cancellation is no longer possible.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>After Shipment</h2>
+    <p>Once your order has been shipped, it <strong>cannot be cancelled</strong>. At this stage, the package is already in transit with our courier partner, and we are unable to recall it.</p>
+    <p>If you no longer wish to keep the order after it has been shipped, you may:</p>
+    <ul>
+      <li>Accept the delivery and then follow our <a href="refund.html">Refund Policy</a> if the item qualifies for a refund (e.g., damaged or wrong item)</li>
+      <li>Refuse the delivery at the doorstep — however, please note that refunds for refused shipments may take longer to process and return shipping costs may apply</li>
+    </ul>
+    <p>We recommend accepting the delivery and contacting us if you have any issues with the order.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>How to Cancel</h2>
+    <p>To cancel your order, send an email with the following details:</p>
+    <div class="highlight-box">
+      <p><strong>Email:</strong> <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br><br>
+      <strong>Include in your email:</strong><br>
+      &bull; Your Order ID<br>
+      &bull; Reason for cancellation (optional but helpful)<br>
+      &bull; Your registered email address or phone number</p>
+    </div>
+    <p>Our team will process your cancellation request and send you a confirmation email. If the order has already been shipped, we will inform you accordingly and suggest alternative options.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Refund on Cancellation</h2>
+    <p>When a cancellation is approved:</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="tag tag-green">Immediate</span>
+        <h3>Cancellation Confirmed</h3>
+        <p>You will receive an email confirming that your order has been successfully cancelled.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="tag tag-yellow">1-2 Business Days</span>
+        <h3>Refund Initiated</h3>
+        <p>The full refund is initiated to your original payment method (Razorpay — UPI, card, or net banking).</p>
+      </div>
+      <div class="timeline-item">
+        <span class="tag tag-yellow">3-5 Business Days</span>
+        <h3>Refund Credited</h3>
+        <p>The refund amount is credited to your account. Bank processing times may vary.</p>
+      </div>
+    </div>
+    <p>Cancellation refunds are always for the <strong>full order amount</strong>, including any shipping charges you may have paid.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>COD Cancellation</h2>
+    <div class="info-card">
+      <h3>Cash on Delivery Orders</h3>
+      <p>If you placed a COD order and cancel it before shipment, <strong>no charges</strong> will be applied. Since no payment has been collected, no refund is necessary.</p>
+      <p>If a COD order is cancelled after the payment has been collected at delivery (e.g., due to a return), the refund will be processed via UPI or bank transfer. You will be asked to provide your UPI ID or bank details for the transfer.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Partial Cancellation</h2>
+    <p>If you placed a multi-item order and wish to cancel only some of the items:</p>
+    <ul>
+      <li><strong>Partial cancellation is allowed</strong> for orders that have not yet been shipped</li>
+      <li>You will receive a refund for the cancelled item(s) only</li>
+      <li>The remaining items will be shipped as scheduled</li>
+      <li>Shipping charges will be recalculated — if the remaining items fall below the free delivery threshold of &#8377;399, standard shipping charges may apply</li>
+      <li>If the order has already been packed or shipped, partial cancellation may not be possible</li>
+    </ul>
+    <p>To request a partial cancellation, email us at <a href="mailto:hello@bookverse.in">hello@bookverse.in</a> with your Order ID and the specific items you wish to cancel.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Repeated Cancellations</h2>
+    <div class="highlight-box">
+      <p>We understand that plans change. However, frequent or repeated cancellations may impact our operations and logistics. If an account shows a pattern of excessive cancellations, BookVerse reserves the right to:</p>
+    </div>
+    <ul>
+      <li>Flag the account for review</li>
+      <li>Temporarily restrict Cash on Delivery (COD) as a payment option for the account</li>
+      <li>In extreme cases, limit the ability to place new orders until the matter is reviewed</li>
+    </ul>
+    <p>We aim to be fair and understanding, and such measures will only be taken in cases of clear misuse. If you believe your account has been flagged in error, please contact us and we will review the situation.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>Contact Information</h2>
+    <p>For any questions or assistance regarding cancellations, please reach out to us:</p>
+    <div class="highlight-box">
+      <p><strong>BookVerse — Customer Support</strong><br>
+      Email: <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br>
+      Website: <a href="https://bookverse-puce.vercel.app">bookverse-puce.vercel.app</a></p>
+    </div>
+    <p>Our team is available to assist you Monday through Saturday, and we aim to respond to all inquiries within 24 hours.</p>
+  </div>
+
+  <div class="section">
+    <p style="color: var(--text-light); font-size: 13px; text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(201,169,110,0.1);">
+      Effective Date: March 2026 &mdash; BookVerse. All rights reserved.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">BookVerse</div>
+    <div class="footer-links">
+      <a href="index.html">Store</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="cancellation.html">Cancellation Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 BookVerse. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

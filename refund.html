@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refund Policy - BookVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --gold: #C9A96E;
+  --gold-light: #D4AF37;
+  --gold-glow: #E8D5A3;
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --cream: #F5F0E8;
+  --text-light: #9A9A9A;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--black); color: var(--cream); line-height: 1.8; overflow-x: hidden; }
+a { text-decoration: none; color: var(--gold); transition: color 0.3s; }
+a:hover { color: var(--gold-glow); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  padding: 16px 0;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: var(--font-display); font-size: 24px; font-weight: 700;
+  color: var(--gold); letter-spacing: 1px;
+}
+.logo span { color: var(--cream); font-weight: 400; }
+.back-link {
+  font-size: 13px; color: var(--text-light); letter-spacing: 0.5px;
+  text-transform: uppercase; font-weight: 500;
+}
+.back-link:hover { color: var(--gold); }
+
+.container { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+.page-badge {
+  display: inline-block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--gold); font-weight: 600;
+  border: 1px solid rgba(201,169,110,0.3); padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 20px;
+}
+.page-title {
+  font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700; color: var(--cream); margin-bottom: 12px;
+}
+.page-subtitle {
+  color: var(--text-light); font-size: 15px; margin-bottom: 8px;
+}
+.last-updated {
+  color: var(--text-light); font-size: 13px; margin-bottom: 48px;
+  padding-bottom: 32px; border-bottom: 1px solid rgba(201,169,110,0.1);
+}
+
+.section { margin-bottom: 40px; }
+.section-number {
+  font-family: var(--font-display); font-size: 13px; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  font-weight: 600;
+}
+.section h2 {
+  font-family: var(--font-display); font-size: 22px; font-weight: 600;
+  color: var(--cream); margin-bottom: 16px;
+}
+.section p, .section li {
+  color: #B8B8B8; font-size: 14.5px; line-height: 1.85; margin-bottom: 12px;
+}
+.section ul, .section ol {
+  padding-left: 24px; margin-bottom: 16px;
+}
+.section li { margin-bottom: 8px; }
+.highlight-box {
+  background: var(--black-soft); border-left: 3px solid var(--gold);
+  padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 20px 0;
+}
+.highlight-box p { margin-bottom: 0; }
+
+/* Process Steps */
+.process-steps {
+  display: grid; gap: 16px; margin: 24px 0;
+}
+.step {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--black-soft); padding: 20px; border-radius: 12px;
+  border: 1px solid rgba(201,169,110,0.08);
+}
+.step-num {
+  flex-shrink: 0; width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--black); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px;
+}
+.step-content h3 {
+  font-family: var(--font-display); font-size: 16px; color: var(--cream);
+  margin-bottom: 4px;
+}
+.step-content p {
+  color: #999; font-size: 13.5px; margin-bottom: 0;
+}
+
+footer {
+  border-top: 1px solid rgba(201,169,110,0.12);
+  padding: 48px 24px;
+  text-align: center;
+}
+.footer-inner { max-width: 900px; margin: 0 auto; }
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  margin-bottom: 24px;
+}
+.footer-links a {
+  font-size: 13px; color: var(--text-light); text-transform: uppercase;
+  letter-spacing: 1px; font-weight: 500;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-brand {
+  font-family: var(--font-display); font-size: 18px; color: var(--gold);
+  margin-bottom: 8px;
+}
+.footer-copy { font-size: 12px; color: #555; }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .section h2 { font-size: 19px; }
+  .footer-links { gap: 16px; }
+  .step { flex-direction: column; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Book<span>Verse</span></a>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-badge">Returns</div>
+  <h1 class="page-title">Refund Policy</h1>
+  <p class="page-subtitle">We want you to be completely satisfied with your purchase. Here is how our refund process works.</p>
+  <p class="last-updated">Last Updated: March 2026</p>
+
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Refund Eligibility</h2>
+    <p>BookVerse offers refunds under the following circumstances:</p>
+    <ul>
+      <li><strong>Damaged Books</strong> — If you receive a book that is physically damaged, torn, has missing pages, or has a defective binding</li>
+      <li><strong>Wrong Items</strong> — If you receive a book that is different from what you ordered</li>
+      <li><strong>Missing Items</strong> — If one or more items from your order are missing from the delivered package</li>
+    </ul>
+    <p>Refunds are subject to verification by our team. We may request photographic evidence of the issue before processing your refund.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>Reporting Timeframe</h2>
+    <div class="highlight-box">
+      <p>You must report any issue with your order <strong>within 48 hours of delivery</strong>. Reports received after this window may not be eligible for a refund. Please include clear photographs of the damaged, wrong, or missing items along with your order details.</p>
+    </div>
+    <p>The 48-hour window begins from the time of delivery as recorded by our shipping partner. We recommend inspecting your order promptly upon receipt.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>Refund Process</h2>
+    <p>Once you report an issue, the refund process follows these steps:</p>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Submit Your Request</h3>
+          <p>Email us at hello@bookverse.in with your order ID, description of the issue, and clear photographs.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Inspection &amp; Review</h3>
+          <p>Our team will review your request and the submitted evidence within 1-2 business days.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Approval &amp; Notification</h3>
+          <p>You will receive an email confirming whether your refund has been approved or if additional information is needed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Refund Processed</h3>
+          <p>Approved refunds are processed within 5-7 business days to your original payment method or as store credit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Refund Methods</h2>
+    <p>Refunds will be processed through one of the following methods:</p>
+    <ul>
+      <li><strong>Original Payment Method</strong> — If you paid via Razorpay (UPI, credit/debit card, net banking), the refund will be credited back to the same payment method. Processing time may vary depending on your bank or payment provider.</li>
+      <li><strong>Store Credit</strong> — You may opt to receive the refund as BookVerse store credit, which can be used for future purchases. Store credits do not expire.</li>
+    </ul>
+    <p>Please note that while we process refunds within 5-7 business days, it may take an additional 5-10 business days for the amount to reflect in your bank account, depending on your financial institution.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>Non-Refundable Items</h2>
+    <p>The following are <strong>not eligible</strong> for refunds:</p>
+    <ul>
+      <li>Books that have been read, used, highlighted, annotated, or show signs of handling beyond initial inspection</li>
+      <li>Book bundles or sets where the seal or packaging has been opened (unless the item inside is damaged or wrong)</li>
+      <li>Orders where the correct items have been delivered as described on the website</li>
+      <li>Items reported after the 48-hour reporting window has elapsed</li>
+      <li>Refund requests without sufficient photographic evidence when requested</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Damaged in Transit</h2>
+    <p>If your book arrives damaged due to mishandling during transit, BookVerse will offer you either:</p>
+    <ul>
+      <li><strong>Full Replacement</strong> — We will ship a new copy of the same book at no additional cost, subject to availability</li>
+      <li><strong>Full Refund</strong> — If the book is out of stock, we will process a complete refund to your original payment method</li>
+    </ul>
+    <p>For transit damage claims, please photograph the packaging as well as the damaged book before disposing of any materials, as this may be needed for our claim with the courier service.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Partial Orders</h2>
+    <p>If you placed a multi-item order and one or more items are missing from the delivered package:</p>
+    <ul>
+      <li>You will receive a refund for the value of the missing item(s) only</li>
+      <li>If the missing items are available in stock, we may offer to ship them separately at no additional cost</li>
+      <li>Shipping charges will be recalculated — if the remaining delivered items fall below the free delivery threshold of &#8377;399, the original shipping rate will still be honoured</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>COD Order Refunds</h2>
+    <div class="highlight-box">
+      <p>For orders placed via Cash on Delivery (COD), refunds will be processed through <strong>UPI or direct bank transfer</strong>. You will be asked to provide your UPI ID or bank account details (account number, IFSC code) so that we can initiate the transfer. COD refunds are typically processed within 5-7 business days after approval.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 09</div>
+    <h2>How to Request a Refund</h2>
+    <p>To initiate a refund request, please send an email with the following details:</p>
+    <div class="highlight-box">
+      <p><strong>Email:</strong> <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br><br>
+      <strong>Include in your email:</strong><br>
+      &bull; Your Order ID<br>
+      &bull; Description of the issue (damaged / wrong item / missing item)<br>
+      &bull; Clear photographs showing the problem<br>
+      &bull; Photograph of the packaging (for transit damage claims)<br>
+      &bull; Your preferred refund method (original payment / store credit)</p>
+    </div>
+    <p>Our support team aims to acknowledge all refund requests within 24 hours of receipt.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 10</div>
+    <h2>Contact Information</h2>
+    <p>For any questions or concerns regarding our refund policy, please contact us:</p>
+    <div class="highlight-box">
+      <p><strong>BookVerse — Customer Support</strong><br>
+      Email: <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br>
+      Website: <a href="https://bookverse-puce.vercel.app">bookverse-puce.vercel.app</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p style="color: var(--text-light); font-size: 13px; text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(201,169,110,0.1);">
+      Effective Date: March 2026 &mdash; BookVerse. All rights reserved.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">BookVerse</div>
+    <div class="footer-links">
+      <a href="index.html">Store</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="cancellation.html">Cancellation Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 BookVerse. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

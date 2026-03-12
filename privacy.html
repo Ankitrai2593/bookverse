@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - BookVerse</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --gold: #C9A96E;
+  --gold-light: #D4AF37;
+  --gold-glow: #E8D5A3;
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --cream: #F5F0E8;
+  --text-light: #9A9A9A;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--black); color: var(--cream); line-height: 1.8; overflow-x: hidden; }
+a { text-decoration: none; color: var(--gold); transition: color 0.3s; }
+a:hover { color: var(--gold-glow); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  padding: 16px 0;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: var(--font-display); font-size: 24px; font-weight: 700;
+  color: var(--gold); letter-spacing: 1px;
+}
+.logo span { color: var(--cream); font-weight: 400; }
+.back-link {
+  font-size: 13px; color: var(--text-light); letter-spacing: 0.5px;
+  text-transform: uppercase; font-weight: 500;
+}
+.back-link:hover { color: var(--gold); }
+
+.container { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+.page-badge {
+  display: inline-block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--gold); font-weight: 600;
+  border: 1px solid rgba(201,169,110,0.3); padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 20px;
+}
+.page-title {
+  font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700; color: var(--cream); margin-bottom: 12px;
+}
+.page-subtitle {
+  color: var(--text-light); font-size: 15px; margin-bottom: 8px;
+}
+.last-updated {
+  color: var(--text-light); font-size: 13px; margin-bottom: 48px;
+  padding-bottom: 32px; border-bottom: 1px solid rgba(201,169,110,0.1);
+}
+
+.section { margin-bottom: 40px; }
+.section-number {
+  font-family: var(--font-display); font-size: 13px; color: var(--gold);
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  font-weight: 600;
+}
+.section h2 {
+  font-family: var(--font-display); font-size: 22px; font-weight: 600;
+  color: var(--cream); margin-bottom: 16px;
+}
+.section p, .section li {
+  color: #B8B8B8; font-size: 14.5px; line-height: 1.85; margin-bottom: 12px;
+}
+.section ul, .section ol {
+  padding-left: 24px; margin-bottom: 16px;
+}
+.section li { margin-bottom: 8px; }
+.highlight-box {
+  background: var(--black-soft); border-left: 3px solid var(--gold);
+  padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 20px 0;
+}
+.highlight-box p { margin-bottom: 0; }
+
+.data-table {
+  width: 100%; border-collapse: collapse; margin: 20px 0;
+  font-size: 14px;
+}
+.data-table th {
+  text-align: left; padding: 12px 16px;
+  background: var(--black-soft); color: var(--gold);
+  font-weight: 600; font-size: 12px; text-transform: uppercase;
+  letter-spacing: 1px; border-bottom: 1px solid rgba(201,169,110,0.2);
+}
+.data-table td {
+  padding: 12px 16px; color: #B8B8B8;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.data-table tr:hover td { background: rgba(201,169,110,0.03); }
+
+footer {
+  border-top: 1px solid rgba(201,169,110,0.12);
+  padding: 48px 24px;
+  text-align: center;
+}
+.footer-inner { max-width: 900px; margin: 0 auto; }
+.footer-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  margin-bottom: 24px;
+}
+.footer-links a {
+  font-size: 13px; color: var(--text-light); text-transform: uppercase;
+  letter-spacing: 1px; font-weight: 500;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-brand {
+  font-family: var(--font-display); font-size: 18px; color: var(--gold);
+  margin-bottom: 8px;
+}
+.footer-copy { font-size: 12px; color: #555; }
+
+@media (max-width: 600px) {
+  .container { padding: 32px 16px 60px; }
+  .section h2 { font-size: 19px; }
+  .footer-links { gap: 16px; }
+  .data-table { font-size: 13px; }
+  .data-table th, .data-table td { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Book<span>Verse</span></a>
+    <a href="index.html" class="back-link">&larr; Back to Store</a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-badge">Privacy</div>
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="page-subtitle">Your privacy matters to us. This policy explains how we collect, use, and protect your information.</p>
+  <p class="last-updated">Last Updated: March 2026</p>
+
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Information We Collect</h2>
+    <p>When you use BookVerse, we may collect the following types of personal information:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data Type</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Personal Identity</td><td>Full name</td></tr>
+        <tr><td>Contact Information</td><td>Email address, phone number</td></tr>
+        <tr><td>Delivery Details</td><td>Shipping address, pin code, city, state</td></tr>
+        <tr><td>Payment Information</td><td>Processed securely via Razorpay (we do not store card or bank details)</td></tr>
+        <tr><td>Order History</td><td>Items purchased, order dates, transaction IDs</td></tr>
+        <tr><td>Device &amp; Usage Data</td><td>Browser type, IP address, pages visited, time spent</td></tr>
+      </tbody>
+    </table>
+    <p>We collect this information when you place an order, contact us, or browse our website.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+      <li><strong>Order Processing</strong> — To process and fulfil your book orders, including payment verification and order confirmation</li>
+      <li><strong>Delivery</strong> — To ship your orders to the correct address and provide tracking updates</li>
+      <li><strong>Communication</strong> — To send order confirmations, shipping updates, and respond to your inquiries</li>
+      <li><strong>Customer Support</strong> — To assist with refund requests, cancellations, and general queries</li>
+      <li><strong>Improvement</strong> — To analyse usage patterns and improve our website, product offerings, and services</li>
+      <li><strong>Legal Compliance</strong> — To comply with applicable laws, regulations, and legal processes</li>
+    </ul>
+    <p>We do not use your personal information for unsolicited marketing without your explicit consent.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>Information Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your data with the following trusted service providers to fulfil our obligations:</p>
+    <ul>
+      <li><strong>Razorpay</strong> — For secure payment processing (UPI, credit/debit cards, net banking). Razorpay handles your payment data under their own privacy policy and PCI DSS compliance.</li>
+      <li><strong>Shipping Partners (Shiprocket / Courier Services)</strong> — Your name, phone number, and delivery address are shared with logistics providers to fulfil and deliver your orders.</li>
+      <li><strong>Analytics Providers</strong> — We may use anonymised, aggregated data with analytics services to understand website usage patterns.</li>
+    </ul>
+    <p>We may also disclose your information if required by law, court order, or governmental regulation, or to protect the rights, property, or safety of BookVerse and its users.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Data Security</h2>
+    <p>We take the security of your personal information seriously and implement appropriate technical and organisational measures to protect it, including:</p>
+    <ul>
+      <li>Secure HTTPS encryption for all website communications</li>
+      <li>Payment processing through PCI DSS-compliant Razorpay gateway</li>
+      <li>Limited access to personal data on a need-to-know basis</li>
+      <li>Regular security reviews and updates</li>
+    </ul>
+    <p>While we strive to protect your personal data, no method of transmission over the internet or electronic storage is completely secure. We cannot guarantee absolute security but will notify you promptly in the event of a data breach affecting your information.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>Cookies &amp; Tracking</h2>
+    <p>BookVerse may use cookies and similar tracking technologies to enhance your browsing experience. These may include:</p>
+    <ul>
+      <li><strong>Essential Cookies</strong> — Required for the basic functioning of the website, such as maintaining your shopping cart</li>
+      <li><strong>Analytics Cookies</strong> — Help us understand how visitors interact with our website to improve its performance</li>
+      <li><strong>Preference Cookies</strong> — Remember your settings and preferences for a personalised experience</li>
+    </ul>
+    <p>You can control or disable cookies through your browser settings. However, disabling certain cookies may affect the functionality of our website.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Third-Party Links</h2>
+    <p>Our website may contain links to third-party websites, including publisher sites, review platforms, and social media. These external sites have their own privacy policies, and we are not responsible for their content or data practices.</p>
+    <p>We encourage you to review the privacy policies of any third-party sites you visit through links on BookVerse.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Children's Privacy</h2>
+    <p>BookVerse is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If we become aware that we have inadvertently collected personal data from a child under 13, we will take steps to delete such information promptly.</p>
+    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:hello@bookverse.in">hello@bookverse.in</a>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>Your Rights</h2>
+    <p>As a user, you have the following rights concerning your personal data:</p>
+    <ul>
+      <li><strong>Right to Access</strong> — You may request a copy of the personal information we hold about you</li>
+      <li><strong>Right to Correction</strong> — You may request correction of any inaccurate or incomplete personal information</li>
+      <li><strong>Right to Deletion</strong> — You may request the deletion of your personal data, subject to our legal obligations and legitimate business interests</li>
+      <li><strong>Right to Withdraw Consent</strong> — Where we process your data based on consent, you may withdraw that consent at any time</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at <a href="mailto:hello@bookverse.in">hello@bookverse.in</a>. We will respond to your request within a reasonable timeframe.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 09</div>
+    <h2>Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to fulfil the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Specifically:</p>
+    <ul>
+      <li>Order and transaction data is retained for a minimum of 8 years as required under Indian tax and accounting regulations</li>
+      <li>Communication records are retained for up to 3 years for customer support purposes</li>
+      <li>Website usage data is retained in anonymised form for analytical purposes</li>
+    </ul>
+    <p>When personal data is no longer needed, we will securely delete or anonymise it.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 10</div>
+    <h2>Changes to This Policy</h2>
+    <p>BookVerse reserves the right to update this Privacy Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+    <p>Continued use of our website after changes to this policy constitutes your acceptance of the revised terms.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Section 11</div>
+    <h2>Contact for Privacy Concerns</h2>
+    <p>If you have any questions, concerns, or complaints regarding this Privacy Policy or how your personal data is handled, please reach out to us:</p>
+    <div class="highlight-box">
+      <p><strong>BookVerse — Privacy Team</strong><br>
+      Email: <a href="mailto:hello@bookverse.in">hello@bookverse.in</a><br>
+      Website: <a href="https://bookverse-puce.vercel.app">bookverse-puce.vercel.app</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Compliance</div>
+    <h2>Regulatory Compliance</h2>
+    <div class="highlight-box">
+      <p>This Privacy Policy is drafted in compliance with the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, as applicable to the collection, use, and protection of personal data in India.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p style="color: var(--text-light); font-size: 13px; text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(201,169,110,0.1);">
+      Effective Date: March 2026 &mdash; BookVerse. All rights reserved.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">BookVerse</div>
+    <div class="footer-links">
+      <a href="index.html">Store</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="cancellation.html">Cancellation Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 BookVerse. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
